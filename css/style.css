@@ -11,7 +11,7 @@ a{
 nav{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +41,7 @@ span{
     font-size: 18px;
     font-weight: 500;
     align-items: center;
+    margin-left: 10px;
 }
 .link i{
     color: #F61C0D;
@@ -58,6 +59,67 @@ span{
 .menu ul li{
     list-style: none;
 }
+/*  nav  */
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 10px 0px 200px;
+    width: 500px;
+}
+.banner .banner-content h1{
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner .banner-content h2{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.banner .banner-content p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.btn-primary{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+}
+.btn2-primary{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+    margin-left: 20px;
+}
+.banner-img img{
+    width: 450px;
+    height: 500px;
+    padding-right: 200px;
+}
 
 
 
@@ -66,8 +128,23 @@ span{
 /* small    */
 
 @media screen and (max-width:576px) {
-    nav, .link{
+    nav, .link, .banner{
         flex-direction: column;
+    }
+    
+    header{
+        padding: 30px;
+    }
+    .banner-content{
+        margin-top: 100px;
+        padding: 20px 200px 50px 30px;
+    }
+    nav{
+        height: 100%;
+        padding: 20px 0px;
+    }
+    .link{
+        margin-top: 20px;
     }
     .link i{
         padding: 20px;
@@ -79,8 +156,21 @@ span{
 
 
 @media screen and (min-width:576px) and (max-width:990px) {
-    nav, .link{
+    nav, .link, .banner{
         flex-direction: column;
     }
-    
+    header{
+        padding-left: 30px;
+    }
+    nav{
+        height: 100%;
+        padding: 20px 0px;
+    }
+    .banner-content{
+        padding-left: 250px;
+        padding-bottom: 30px;
+    }
+    .banner-img img{
+        padding-left: 150px;
+    }
 }
