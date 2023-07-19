@@ -250,20 +250,83 @@ main{
     width: 60px;
     height: 60px;
 }
+/*  end games  */
 
-
+footer{
+    background-color: #0B0223;
+    padding: 100px 0px;
+}
+.all-content{
+    max-width: 750px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer-content h4{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.section-footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.social-link i{
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.section-description{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.title-footer{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;;
+    font-weight: 500;
+    margin: 20px 0px;
+}
 
 /* small    */
 
 @media screen and (max-width:576px) {
-    nav, .link, .banner, .image-container, .play, .games{
+    nav, .link, .banner, .image-container, .play, .games, .footer-content, .section-footer, .section-description{
         flex-direction: column;
     }
     .image-container{
         margin: 30px;
         gap: 10px;
     }
-
+    footer{
+        margin: 30px;
+    }
+    .footer-content img{
+        width: 100px;
+        height: 100px;
+        margin-left: 120px;
+    }
+    .title-footer{
+        width: 300px;
+        margin: 20px;
+    }
     .play-container{
         margin: 30px 10px 10px 50px;
     }
@@ -308,7 +371,7 @@ main{
 
 
 @media screen and (min-width:576px) and (max-width:990px) {
-    nav, .link, .banner, .image-container, .play{
+    nav, .link, .banner, .image-container, .play, .footer-content, .section-footer, .section-description{
         flex-direction: column;
     }
     header{
@@ -343,5 +406,9 @@ main{
     position: absolute;
     left: 5%;
     bottom: -245%;
+   }
+   .footer-content img{
+    width: 100px;
+    margin-left: 320px;
    }
 }
