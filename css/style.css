@@ -173,19 +173,62 @@ main{
     border-radius: 30px;
 }
 
-
+/* image container  */
+.play{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 0px;
+    align-items: center;
+}
+.play-container{
+    max-width: 350px;
+    margin-left: 150px;
+}
+.play-span{
+    color: #F948B2;
+}
+.play-container h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0B0223;
+    margin-bottom: 20px;
+}
+.play-container p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.play-img img{
+    width: 620px;
+    height: 650px;
+}
+.baby-photo{
+    position: absolute;
+    left: 40%;
+    bottom: -190%;
+}
+.baby-photo img{
+    width: 310px;
+    height: 330px;
+}
 
 
 
 /* small    */
 
 @media screen and (max-width:576px) {
-    nav, .link, .banner, .image-container{
+    nav, .link, .banner, .image-container, .play{
         flex-direction: column;
     }
     .image-container{
         margin: 30px;
         gap: 10px;
+    }
+
+    .play-container{
+        margin: 30px 10px 10px 50px;
     }
     header{
         padding: 30px;
@@ -208,6 +251,16 @@ main{
     .image-card{
         margin-left: 20px;
     }
+    .play-img{
+        width: 80%;
+        margin: 20px 50px 10px 100px;
+    }
+   .baby-photo{
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    bottom: -455%;
+}
     
 }
 
@@ -215,7 +268,7 @@ main{
 
 
 @media screen and (min-width:576px) and (max-width:990px) {
-    nav, .link, .banner, .image-container{
+    nav, .link, .banner, .image-container, .play{
         flex-direction: column;
     }
     header{
@@ -238,4 +291,17 @@ main{
     .position{
         margin-right: 300px;
     }
+    .play-container{
+        margin: 30px;
+    }
+    .play-img{
+        width: 80%;
+        margin: 20px 50px 10px 100px;
+    }
+   .baby-photo{
+    width: 30%;
+    position: absolute;
+    left: 5%;
+    bottom: -245%;
+   }
 }
