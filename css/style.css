@@ -49,11 +49,14 @@ span{
     font-size: 25px;
 }
 .back{
+    display: flex;
     padding: 10px 30px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
+    justify-content: center;
+    align-items: center;
 }
-.icon{
+.black i{
     color: black;
 }
 .menu ul li{
@@ -311,6 +314,7 @@ footer{
     nav, .link, .banner, .image-container, .play, .games, .footer-content, .section-footer, .section-description{
         flex-direction: column;
     }
+    
     .image-container{
         margin: 30px;
         gap: 10px;
